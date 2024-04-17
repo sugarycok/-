@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS  # Flask-CORS 라이브러리 추가
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -16,14 +17,7 @@ import os
 plt.style.use('ggplot')
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
-
-# CORS 헤더 추가
-@app.after_request
-def add_cors_headers(response):
-    response.headers['Access-Control-Allow-Origin'] = '*'  # 모든 도메인에서 요청 허용
-    response.headers['Access-Control-Allow-Methods'] = 'GET, POST'  # GET과 POST 요청 허용
-    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'  # Content-Type 헤더 허용
-    return response
+CORS(app)  # CORS 적용
 
 # 홈 페이지 렌더링
 @app.route('/')
