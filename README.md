@@ -12,6 +12,6 @@
 - 팀 멤버: 길석종, 이창민
 
 - ## 프로젝트 설명
-|![image](static\Result_005930_20240416003604.png)|![image](static\mainpage.PNG)|
+|![image](static/Result_005930_20240416003604.png)|![image](static/mainpage.PNG)|
 |:---:|:---:|
 |메인 홈페이지|애플주식 예측|
