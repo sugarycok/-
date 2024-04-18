@@ -58,9 +58,7 @@ def get_stock_code_route():
 @app.route('/python_response')
 def python_response():
     # 여기에 Python 코드에서 받아온 응답을 반환하는 코드를 추가하세요.
-    
-    # 임시로 예제 응답을 넣어봅시다.
-    response_text = "Python response: This is the response from Python."
+    response_text = "요청하신 회사의 이름과 관련된 주식 코드들 입니다.."
 
     return response_text
 
